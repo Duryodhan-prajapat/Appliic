@@ -15,10 +15,10 @@ const CASE_STUDIES_DETAILS: Record<string, any> = {
     tech: ["Shopify Plus", "Tailwind CSS", "Technical 3D Illustration", "Advanced Analytics Integration"],
     websiteUrl: "https://bavastudios.in/",
     gallery: [
-      "../pages/images/portfolio/bava_1.png",
-      "../pages/images/portfolio/bava_2.png",
-      "../pages/images/portfolio/bava_3.png",
-      "../pages/images/portfolio/bava_4.png"
+      "/images/portfolio/bava_1.png",
+      "/images/portfolio/bava_2.png",
+      "/images/portfolio/bava_3.png",
+      "/images/portfolio/bava_4.png"
     ]
   },
   "caramelo": {
@@ -28,10 +28,10 @@ const CASE_STUDIES_DETAILS: Record<string, any> = {
     tech: ["Shopify", "Liquid", "Tailwind CSS", "Js"],
     websiteUrl: "https://www.caramelo.in/",
     gallery: [
-      "../pages/images/portfolio/caramelo_1.png",
-      "../pages/images/portfolio/caramelo_2.png",
-      "../pages/images/portfolio/caramelo_3.png",
-      "../pages/images/portfolio/caramelo_4.png",
+      "/images/portfolio/caramelo_1.png",
+      "/images/portfolio/caramelo_2.png",
+      "/images/portfolio/caramelo_3.png",
+      "/images/portfolio/caramelo_4.png",
     ]
   },
   "gadgets-expert": {
@@ -41,10 +41,10 @@ const CASE_STUDIES_DETAILS: Record<string, any> = {
     tech: ["Shopify Liquid", "Klaviyo", "Gorgias", "Recharge"],
     websiteUrl: "https://gadgetsexpert.com/",
     gallery: [
-      "../pages/images/portfolio/Gaming_1.png",
-      "../pages/images/portfolio/Gadgets_2.png",
-      "../pages/images/portfolio/Gadgets_3.png",
-      "../pages/images/portfolio/Gadgets_4.png"
+      "/images/portfolio/Gaming_1.png",
+      "/images/portfolio/Gadgets_2.png",
+      "/images/portfolio/Gadgets_3.png",
+      "/images/portfolio/Gadgets_4.png"
     ]
   },
   "nashira": {
@@ -54,10 +54,10 @@ const CASE_STUDIES_DETAILS: Record<string, any> = {
     tech: ["Shopify", "Liquid", "HTML", "AJAX", "Tailwind"],
     websiteUrl: "https://shopnashira.com",
     gallery: [
-      "../pages/images/portfolio/nashira-1.png",
-      "../pages/images/portfolio/nashira-2.png",
-      "../pages/images/portfolio/nashira-3.png",
-      "../pages/images/portfolio/nashira-4.png"
+      "/images/portfolio/nashira-1.png",
+      "/images/portfolio/nashira-2.png",
+      "/images/portfolio/nashira-3.png",
+      "/images/portfolio/nashira-4.png"
     ]
   },
   "shopblaze": {
@@ -67,10 +67,10 @@ const CASE_STUDIES_DETAILS: Record<string, any> = {
     tech: ["Liquid", "jQuery", "Bootstrap", "Swiper.js", "AOS"],
     websiteUrl: "https://shopblaze.net/",
     gallery: [
-      "../pages/images/portfolio/shopblaze-1.png",
-      "../pages/images/portfolio/shopblaze-2.png",
-      "../pages/images/portfolio/shopblaze-3.png",
-      "../pages/images/portfolio/shpblaze-4.png"
+      "/images/portfolio/shopblaze-1.png",
+      "/images/portfolio/shopblaze-2.png",
+      "/images/portfolio/shopblaze-3.png",
+      "/images/portfolio/shpblaze-4.png"
     ]
   },
   "loop": {
@@ -80,10 +80,10 @@ const CASE_STUDIES_DETAILS: Record<string, any> = {
     tech: ["React", "Node.js", "PostgreSQL", "AWS"],
     websiteUrl: "https://loopearplugs.in/",
     gallery: [
-      "../pages/images/portfolio/loop-1.png",
-      "../pages/images/portfolio/loop-4.png",
-      "../pages/images/portfolio/loop-3.png",
-      "../pages/images/portfolio/loop-2.png"
+      "/images/portfolio/loop-1.png",
+      "/images/portfolio/loop-4.png",
+      "/images/portfolio/loop-3.png",
+      "/images/portfolio/loop-2.png"
     ]
   }
 };
@@ -99,21 +99,21 @@ const CaseStudy: React.FC = () => {
       slug: "nashira",
       title: "Nashira – Fashion Jewellery Store",
       category: "E-COMMERCE / SHOPIFY STORE",
-      image: "../pages/images/portfolio/nashira-main.png",
+      image: "/images/portfolio/nashira-main.png",
       desc: "A vibrant online fashion jewellery store built on Shopify, offering a curated collection of stylish everyday and statement accessories with a seamless shopping experience.",
     },
     {
       slug: "shopblaze",
       title: "Blaze – Trendy Accessories Store",
       category: "E-COMMERCE / SHOPIFY STORE",
-      image: "../pages/images/portfolio/shopblaze_main.png",
+      image: "/images/portfolio/shopblaze_main.png",
       desc: "A modern Shopify e-commerce store built to sell trending accessories and gadgets with a clean interface, fast performance, and a smooth shopping experience.",
     },
     {
       slug: "loop",
       title: "Loop Earplugs – Sound Protection & Comfort",
       category: "E-COMMERCE / HEALTH & ACCESSORIES",
-      image: "../pages/images/portfolio/loop_main.png",
+      image: "/images/portfolio/loop_main.png",
       desc: "A Shopify-powered online store offering premium noise-reducing earplugs designed for sleep, events, travel, and everyday comfort with multiple product variants and ergonomic fit.",
     }
   ];

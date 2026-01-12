@@ -13,21 +13,21 @@ const ALL_PROJECTS = [
     slug: "nashira",
     title: "Nashira – Fashion Jewellery Store",
     category: "E-COMMERCE / SHOPIFY STORE",
-    image: "../pages/images/portfolio/nashira-main.png",
+    image: "/images/portfolio/nashira-main.png",
     desc: "A vibrant online fashion jewellery store built on Shopify, offering a curated collection of stylish everyday and statement accessories with a seamless shopping experience.",
   },
   {
     slug: "shopblaze",
     title: "Blaze – Trendy Accessories Store",
     category: "E-COMMERCE / SHOPIFY STORE",
-    image: "../pages/images/portfolio/shopblaze_main.png",
+    image: "/images/portfolio/shopblaze_main.png",
     desc: "A modern Shopify e-commerce store built to sell trending accessories and gadgets with a clean interface, fast performance, and a smooth shopping experience.",
   },
   {
     slug: "loop",
     title: "Loop Earplugs – Sound Protection & Comfort",
     category: "E-COMMERCE / HEALTH & ACCESSORIES",
-    image: "../pages/images/portfolio/loop_main.png",
+    image: "/images/portfolio/loop_main.png",
     desc: "A Shopify-powered online store offering premium noise-reducing earplugs designed for sleep, events, travel, and everyday comfort with multiple product variants and ergonomic fit.",
   }
 ];

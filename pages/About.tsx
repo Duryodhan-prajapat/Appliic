@@ -94,8 +94,8 @@ const About: React.FC = () => {
             {/* Visual Column */}
             <div className="lg:w-2/5 relative h-[450px] lg:h-auto overflow-hidden">
               <ResponsiveImage
-                src="../pages/images/founder/founder_2.png"
-                mobileSrc="../pages/images/founder/founder_2.png" // Taller crop for mobile
+                src="/images/founder/founder_2.png"
+                mobileSrc="/images/founder/founder_2.png" // Taller crop for mobile
                 alt="Duryodhan Prajapat - Founder"
                 className="w-full h-full grayscale hover:grayscale-0 transition-all duration-700"
               />
@@ -227,7 +227,7 @@ const About: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
             {[
-              { name: "Duryodhan Prajapat", role: "Founder & CEO", image: "../pages/images/founder/Founder.jpg", bio: " Seasoned website developer with 4 years of experience and has worked with 150+ businesses around the glboe successfully." }
+              { name: "Duryodhan Prajapat", role: "Founder & CEO", image: "/images/founder/Founder.jpg", bio: " Seasoned website developer with 4 years of experience and has worked with 150+ businesses around the glboe successfully." }
             ].map((member, i) => (
               <motion.div
                 key={i}

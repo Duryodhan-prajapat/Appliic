@@ -295,16 +295,16 @@ const CertificationsSection = () => {
         </div>
         <div className="flex flex-wrap justify-center items-center gap-10 md:gap-5  transition-all duration-500">
           <div className="flex items-center gap-2">
-            <img src="../pages/images/logo/meta-1.png" alt="Meta" className="h-6 md:h-10" />
+            <img src="/images/logo/meta-1.png" alt="Meta" className="h-6 md:h-10" />
           </div>
           <div className="flex items-center gap-2">
-            <img src="../pages/images/logo/shopify-2.png" alt="Shopify" className="h-10 md:h-14" />
+            <img src="/images/logo/shopify-2.png" alt="Shopify" className="h-10 md:h-14" />
           </div>
           <div className="flex items-center gap-2">
-            <img src="../pages/images/logo/google-3.png" alt="Shopify" className="h-10 md:h-14" />
+            <img src="/images/logo/google-3.png" alt="Shopify" className="h-10 md:h-14" />
           </div>
           <div className="flex items-center gap-2">
-            <img src="../pages/images/logo/wordpress-4.png" alt="Shopify" className="h-10 md:h-14" />
+            <img src="/images/logo/wordpress-4.png" alt="Shopify" className="h-10 md:h-14" />
           </div>
           </div>
       </div>
@@ -317,21 +317,21 @@ export const PROJECTS_DATA = [
     slug: "bava-studios",
     title: "Bava Studios",
     category: "Shopify / Premium Cookware",
-    image: "../pages/images/portfolio/bava_main.png",
+    image: "/images/portfolio/bava_main.png",
     desc: "Engineered a high-performance D2C storefront for Bava Studios, highlighting their Tri-ply technology with a focus on conversion and premium brand storytelling.",
   },
   {
     slug: "caramelo",
     title: "Caramelo ",
     category: "Shopify Plus / UX Design",
-    image: "../pages/images/portfolio/caramelo_main.png",
+    image: "/images/portfolio/caramelo_main.png",
     desc: "Caramelo is more than just a brand; it's a promise from two mothers to all parents that their children will have the very best, ensuring that as they grow, they'll have exactly what they need to thrive.",
   },
   {
     slug: "gadgets-expert",
     title: "Gadgets Expert",
     category: "D2C E-commerce / Shopify design & development",
-    image: "../pages/images/portfolio/Gadgets_expert_main.png",
+    image: "/images/portfolio/Gadgets_expert_main.png",
     desc: "Founded in the United Arab Emirates, Gadgets Expert was born from a commitment to bring the latest in tech accessories to a community that appreciates quality and convenience.",
   }
 ];
@@ -469,35 +469,35 @@ const LinkedInReviewsSection = () => {
     {
       name: "Jyoti Agarwal",
       title: "Founder at caramelo",
-      image: "../pages/images/Reviews/caramelo_owner.png",
+      image: "/images/Reviews/caramelo_owner.png",
       text: "I worked with Duryodhan, on a recent project and had a really smooth experience. He was professional, responsive, and completely understood what was needed. The final output was clean, timely, and exactly on brief. I appreciated his attention to detail throughout. Highly recommend him if you’re looking for a reliable and easy-to-work-with developer.",
       date: "Jul 9, 2025"
     },
     {
       name: "Srishti Agarwal",
       title: "Creative Director, MadeOddly",
-      image: "../pages/images/Reviews/srishti.png",
+      image: "/images/Reviews/srishti.png",
       text: "I recently collaborated with Duryodhan on a Shopify project, and it was a great experience. He’s sharp, responsive, and knows his way around the platform really well. What I appreciated most was how easy he was to work with. No fuss, just quietly got things done, even when the brief changed or timelines shifted. If you're looking for someone reliable and efficient for your Shopify needs, I’d recommend him.",
       date: "Jul 2, 2025"
     },
     {
       name: "Shahab Khan",
       title: "Amazon account specialist",
-      image: "../pages/images/Reviews/Shahab.png",
+      image: "/images/Reviews/Shahab.png",
       text: "I had the pleasure of working with Duryodhan, a highly skilled Shopify developer, on a custom feature for our store—a PDF downloader integrated seamlessly into our Shopify theme. From the start, Duryodhan understood exactly what we needed, communicated clearly, and delivered a clean, efficient solution that worked perfectly across all devices. I highly recommend working with Duryodhan. We’ll definitely reach out again for future Shopify needs!",
       date: "Mar 30, 2025"
     },
     {
       name: "Syed Kamal Raza",
       title: "Digital Marketing Speacialist",
-      image: "../pages/images/Reviews/syed_kamal.png",
+      image: "/images/Reviews/syed_kamal.png",
       text: "I wholeheartedly recommend Duryodhan for any e-commerce development needs. His energy and dedication were evident from the start. He not only built my Shopify store with 50 products in just one month, but he also exceeded my expectations with his speed, accuracy, and commitment to deadlines. Duryodhan is a highly talented and intelligent individual with a strong work ethic. I have complete trust in his abilities and highly recommend him to anyone looking for a reliable and skilled Shopify developer.",
       date: "Nov 22, 2024"
     },
     {
       name: "Abhishek Bhowmik",
       title: "Owner at BAC",
-      image: "../pages/images/Reviews/placeholder_user.png",
+      image: "/images/Reviews/placeholder_user.png",
       text: "I am delighted to recommend Duryodhan for his outstanding work as a website developer. His expertise, professionalism, and problem-solving skills have been invaluable to my project. Duryodhan is not only highly skilled but also a great communicator—polite, patient, and quick to understand requirements. He efficiently resolved every challenge that arose, ensuring a smooth and successful development process. ",
       date: "June 18, 2025"
     }
@@ -649,16 +649,16 @@ const D2CScaleSection = () => (
            {[...Array(2)].map((_, setIdx) => (
               <div key={setIdx} className="flex px-4">
                  {[
-                   "../pages/images/mobile_store/mobile-shot-1.png",
-                   "../pages/images/mobile_store/mobile-shot-2.png",
-                   "../pages/images/mobile_store/mobile-shot-3.png",
-                   "../pages/images/mobile_store/mobile-shot-4.png",
-                   "../pages/images/mobile_store/mobile-shot-5.png",
-                   "../pages/images/mobile_store/mobile-shot-6.png",
-                   "../pages/images/mobile_store/mobile-shot-7.png",
-                   "../pages/images/mobile_store/mobile-shot-8.png",
-                   "../pages/images/mobile_store/mobile-shot-9.png",
-                   "../pages/images/mobile_store/mobile-shot-10.png"
+                   "/images/mobile_store/mobile-shot-1.png",
+                   "/images/mobile_store/mobile-shot-2.png",
+                   "/images/mobile_store/mobile-shot-3.png",
+                   "/images/mobile_store/mobile-shot-4.png",
+                   "/images/mobile_store/mobile-shot-5.png",
+                   "/images/mobile_store/mobile-shot-6.png",
+                   "/images/mobile_store/mobile-shot-7.png",
+                   "/images/mobile_store/mobile-shot-8.png",
+                   "/images/mobile_store/mobile-shot-9.png",
+                   "/images/mobile_store/mobile-shot-10.png"
                  ].map((src, i) => (
                     <PhoneFrame key={i} index={i} src={src} />
                  ))}
