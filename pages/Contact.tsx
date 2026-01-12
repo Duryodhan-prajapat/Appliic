@@ -100,10 +100,7 @@ const Contact: React.FC = () => {
                 <div>
                   <h4 className="font-bold text-slate-900 text-lg">Our Office</h4>
                   <p className="text-slate-500 text-sm md:text-base mt-1 font-medium leading-relaxed">
-                    123 Innovation Drive,<br />
-                    Suite 400, Tech Valley,<br />
-                    CA 90210
-                  </p>
+                  Jodhpur Rajasthan, 342008 </p>
                 </div>
               </div>
               
