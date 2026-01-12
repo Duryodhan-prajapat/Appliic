@@ -37,14 +37,14 @@ const services = [
   {
     id: 'performance',
     title: 'Speed Optimization',
-    path: '/services/web-development',
+    path: '/services/speed-optimization',
     description: 'Eliminate bounce rates. We optimize your store for 90+ Core Web Vitals scores, ensuring lightning-fast load times globally.',
     icon: Gauge,
   },
   {
     id: 'cro',
     title: 'CRO & UX Strategy',
-    path: '/services/digital-marketing',
+    path: '/services/cro',
     description: 'Data-driven analysis and iterative testing to maximize your Conversion Rate and Average Order Value (AOV).',
     icon: Target,
   }
@@ -166,11 +166,16 @@ const Services: React.FC = () => {
                   Get a Free Audit
                 </Button>
               </Link>
-              <Link to="/contact">
-                <Button variant="outline" className="w-full sm:w-auto h-14 md:h-16 px-10 md:px-12 text-base md:text-lg font-black rounded-2xl border-primary-600/30 text-primary-600 hover:bg-white/50">
+              <a 
+                href="https://calendly.com/duryodhan_prajapat/30min" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-full sm:w-auto"
+              >
+                <Button variant="outline" className="w-full sm:w-auto h-14 md:h-16 px-10 md:px-12 text-base md:text-lg font-black rounded-2xl border-primary-600/30 text-primary-500 hover:bg-white/50">
                   Book a Call
                 </Button>
-              </Link>
+              </a>
             </div>
           </motion.div>
         </div>

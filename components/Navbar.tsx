@@ -7,6 +7,8 @@ import { NavItem } from '../types';
 const navItems: NavItem[] = [
   { label: 'Home', path: '/' },
   { label: 'Services', path: '/services' },
+  { label: 'Portfolio', path: '/portfolio' },
+  { label: 'Blog', path: '/blog' },
   { label: 'About', path: '/about' },
   { label: 'Contact', path: '/contact' },
 ];
@@ -44,11 +46,7 @@ const Navbar: React.FC = () => {
           <div className="flex justify-between items-center">
             <Link to="/" className="flex items-center gap-2.5 group">
               <div className="flex items-center gap-2">
-                {/* <img 
-                  src="https://img.logoipsum.com/296.svg" 
-                  alt="Appliic Logo" 
-                  className="h-8 md:h-10 w-auto group-hover:scale-105 transition-transform" 
-                /> */}
+                
                 <span className={`text-xl md:text-2xl font-black tracking-tighter transition-colors duration-300 ${logoTextColor}`}>
                   Appliic<span className="text-primary-600">.DS</span>
                 </span>
@@ -56,15 +54,16 @@ const Navbar: React.FC = () => {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-10">
+            <div className="hidden md:flex items-center space-x-8 lg:space-x-10">
               {navItems.map((item) => {
                 const isActive = location.pathname === item.path;
                 return (
                   <Link
                     key={item.path}
                     to={item.path}
-                    className={`text-sm font-bold tracking-tight transition-all hover:text-primary-600 relative group ${isActive ? navActiveColor : navLinkColor
-                      }`}
+                    className={`text-[13px] lg:text-sm font-bold tracking-tight transition-all hover:text-primary-600 relative group ${
+                      isActive ? navActiveColor : navLinkColor
+                    }`}
                   >
                     {item.label}
                     {isActive && (
@@ -80,7 +79,7 @@ const Navbar: React.FC = () => {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className={`${buttonBg} ${buttonTextColor} px-7 py-3 rounded-full font-black text-sm shadow-xl transition-all duration-300 hover:bg-slate-800`}
+                  className={`${buttonBg} ${buttonTextColor} px-6 lg:px-7 py-3 rounded-full font-black text-[13px] lg:text-sm shadow-xl transition-all duration-300 hover:bg-slate-800`}
                 >
                   Start a Project
                 </motion.button>
@@ -113,7 +112,7 @@ const Navbar: React.FC = () => {
               onClick={() => setIsOpen(false)}
               className="absolute inset-0 bg-slate-900/60 backdrop-blur-md"
             />
-
+            
             {/* Sidebar Content */}
             <motion.div
               initial={{ x: '100%' }}
@@ -125,11 +124,7 @@ const Navbar: React.FC = () => {
               {/* Header - Fixed */}
               <div className="flex-shrink-0 flex justify-between items-center p-6 border-b border-slate-50">
                 <Link to="/" onClick={() => setIsOpen(false)} className="flex items-center gap-2">
-                  {/* <img 
-                    src="https://img.logoipsum.com/296.svg" 
-                    alt="Appliic Logo" 
-                    className="h-8 w-auto" 
-                  /> */}
+                  
                   <span className="text-xl font-black tracking-tighter text-slate-900">
                     Appliic<span className="text-primary-600">.DS</span>
                   </span>
@@ -157,10 +152,11 @@ const Navbar: React.FC = () => {
                       >
                         <Link
                           to={item.path}
-                          className={`block px-6 py-4 sm:py-5 text-xl sm:text-2xl font-black rounded-2xl sm:rounded-3xl transition-all ${isActive
+                          className={`block px-6 py-4 sm:py-5 text-xl sm:text-2xl font-black rounded-2xl sm:rounded-3xl transition-all ${
+                            isActive
                               ? 'bg-primary-50 text-primary-600 shadow-sm'
                               : 'text-slate-900 hover:bg-slate-50'
-                            }`}
+                          }`}
                         >
                           {item.label}
                         </Link>
@@ -179,7 +175,7 @@ const Navbar: React.FC = () => {
                 >
                   <Link to="/contact" className="block">
                     <button className="w-full bg-primary-600 text-white px-6 py-4 sm:py-5 rounded-2xl font-black text-lg sm:text-xl shadow-xl shadow-primary-500/30 active:scale-95 transition-transform">
-                      Start a Project
+                        Start a Project
                     </button>
                   </Link>
                   <div className="mt-6 sm:mt-8 text-center">
@@ -187,7 +183,7 @@ const Navbar: React.FC = () => {
                       Get in touch
                     </p>
                     <a href="mailto:hello@appliicds.com" className="text-slate-900 font-bold text-sm sm:text-base hover:text-primary-600 transition-colors">
-                      hello@appliicds.com
+                      appliic.digital@gmail.com
                     </a>
                   </div>
                 </motion.div>

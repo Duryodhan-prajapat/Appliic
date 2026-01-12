@@ -8,10 +8,14 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import CaseStudy from './pages/CaseStudy';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import WebDevelopment from './pages/services/WebDevelopment';
 import AppDevelopment from './pages/services/AppDevelopment';
 import BrandConsultation from './pages/services/BrandConsultation';
 import DigitalMarketing from './pages/services/DigitalMarketing';
+import SpeedOptimization from './pages/services/SpeedOptimization';
+import CRO from './pages/services/CRO';
 import { AnimatePresence } from 'framer-motion';
 
 // Scroll to top component
@@ -37,10 +41,14 @@ const App: React.FC = () => {
             <Route path="/services/app-development" element={<AppDevelopment />} />
             <Route path="/services/brand-consultation" element={<BrandConsultation />} />
             <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
+            <Route path="/services/speed-optimization" element={<SpeedOptimization />} />
+            <Route path="/services/cro" element={<CRO />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/case-study/:slug" element={<CaseStudy />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
           </Routes>
         </AnimatePresence>
       </main>

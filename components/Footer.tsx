@@ -10,11 +10,7 @@ const Footer: React.FC = () => {
           {/* Brand Column */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2">
-              {/* <img 
-                src="https://img.logoipsum.com/296.svg" 
-                alt="Appliic Logo" 
-                className="h-8 md:h-10 w-auto brightness-0 invert" 
-              /> */}
+              
               <span className="text-xl font-bold tracking-tight text-white">
                 Appliic<span className="text-primary-400">.DS</span>
               </span>
@@ -36,7 +32,8 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li><Link to="/about" className="text-slate-400 hover:text-white transition-colors">About Us</Link></li>
               <li><Link to="/services" className="text-slate-400 hover:text-white transition-colors">Our Services</Link></li>
-              <li><Link to="/contact" className="text-slate-400 hover:text-white transition-colors">Careers</Link></li>
+              <li><Link to="/blog" className="text-slate-400 hover:text-white transition-colors">Insights (Blog)</Link></li>
+              <li><Link to="/portfolio" className="text-slate-400 hover:text-white transition-colors">Portfolio</Link></li>
               <li><Link to="/contact" className="text-slate-400 hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
@@ -49,6 +46,8 @@ const Footer: React.FC = () => {
               <li><Link to="/services/app-development" className="text-slate-400 hover:text-white transition-colors">App Development</Link></li>
               <li><Link to="/services/brand-consultation" className="text-slate-400 hover:text-white transition-colors">Brand Consultation</Link></li>
               <li><Link to="/services/digital-marketing" className="text-slate-400 hover:text-white transition-colors">Digital Marketing</Link></li>
+              <li><Link to="/services/speed-optimization" className="text-slate-400 hover:text-white transition-colors">Speed Optimization</Link></li>
+              <li><Link to="/services/cro" className="text-slate-400 hover:text-white transition-colors">CRO & UX Strategy</Link></li>
             </ul>
           </div>
 
@@ -62,7 +61,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center gap-3 text-slate-400">
                 <Mail size={20} className="text-primary-400 shrink-0" />
-                <span>hello@appliic.com</span>
+                <span>appliic.digital@gmail.com</span>
               </li>
               <li className="flex items-center gap-3 text-slate-400">
                 <Phone size={20} className="text-primary-400 shrink-0" />

@@ -7,7 +7,7 @@ import Breadcrumbs from '../components/Breadcrumbs';
 import ResponsiveImage from '../components/ResponsiveImage';
 
 const StatCard = ({ label, value, icon: Icon }: { label: string, value: string, icon: any }) => (
-  <motion.div 
+  <motion.div
     whileHover={{ y: -5 }}
     className="bg-slate-50 p-8 rounded-[2rem] shadow-sm border border-slate-100 flex flex-col items-center text-center"
   >
@@ -54,7 +54,7 @@ const About: React.FC = () => {
                 OUR MISSION
               </div>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-slate-900 mb-8 tracking-tighter leading-tight">
-                Engineering <br/>
+                Engineering <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-blue-500">Digital Progress</span>
               </h1>
               <p className="text-base md:text-xl text-slate-500 mb-10 leading-relaxed font-medium">
@@ -118,10 +118,10 @@ const About: React.FC = () => {
                 </h2>
                 <div className="space-y-6 text-slate-400 font-medium text-base md:text-lg leading-relaxed">
                   <p>
-                    I spent a decade engineering systems at high-growth tech firms before realizing that most brands struggle because of a fundamental disconnect between their business goals and their technical execution.
+                    Appliic.DS was built on a simple belief: execution should never be disconnected from purpose. Every digital decision must support a clear business outcome.
                   </p>
                   <p>
-                    At Appliic.DS, I personally oversee our technical strategy to ensure that every pixel is purposeful and every line of code serves a measurable objective. We are here to bridge the gap between creative ambition and technical reality.
+                    I personally oversee our technical strategy to ensure that every pixel is purposeful and every line of code serves a measurable objective. We are here to bridge the gap between creative ambition and technical reality.
                   </p>
                 </div>
 
@@ -130,12 +130,12 @@ const About: React.FC = () => {
                     <a href="https://www.linkedin.com/in/duryodhan-prajapat-1262971b0/" className="w-12 h-12 bg-slate-800 rounded-2xl flex items-center justify-center text-slate-400 hover:text-white hover:bg-primary-600 transition-all">
                       <Linkedin size={20} />
                     </a>
-                    <a href="#" className="w-12 h-12 bg-slate-800 rounded-2xl flex items-center justify-center text-slate-400 hover:text-white hover:bg-primary-600 transition-all">
+                    {/* <a href="#" className="w-12 h-12 bg-slate-800 rounded-2xl flex items-center justify-center text-slate-400 hover:text-white hover:bg-primary-600 transition-all">
                       <Twitter size={20} />
                     </a>
                     <a href="#" className="w-12 h-12 bg-slate-800 rounded-2xl flex items-center justify-center text-slate-400 hover:text-white hover:bg-primary-600 transition-all">
                       <Instagram size={20} />
-                    </a>
+                    </a> */}
                   </div>
                   <div className="h-px bg-slate-800 flex-grow hidden sm:block"></div>
                 </div>
@@ -184,34 +184,34 @@ const About: React.FC = () => {
             <h2 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tighter">The Appliic Lifecycle</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-            <ProcessStep 
-              number="01" 
-              title="Discovery" 
-              desc="Deep dive into your business metrics, audience personas, and technical requirements." 
+            <ProcessStep
+              number="01"
+              title="Discovery"
+              desc="Deep dive into your business metrics, audience personas, and technical requirements."
               icon={Target}
             />
-            <ProcessStep 
-              number="02" 
-              title="Strategy" 
-              desc="Architecting the UX and technical stack to solve your unique conversion bottlenecks." 
+            <ProcessStep
+              number="02"
+              title="Strategy"
+              desc="Architecting the UX and technical stack to solve your unique conversion bottlenecks."
               icon={Zap}
             />
-            <ProcessStep 
-              number="03" 
-              title="Execution" 
-              desc="Agile development with continuous integration and real-time client feedback loops." 
+            <ProcessStep
+              number="03"
+              title="Execution"
+              desc="Agile development with continuous integration and real-time client feedback loops."
               icon={Code}
             />
-            <ProcessStep 
-              number="04" 
-              title="Scale" 
-              desc="Post-launch monitoring, CRO audits, and iterative improvements for maximum growth." 
+            <ProcessStep
+              number="04"
+              title="Scale"
+              desc="Post-launch monitoring, CRO audits, and iterative improvements for maximum growth."
               icon={TrendingUp}
             />
           </div>
         </div>
       </section>
-      
+
       {/* Team Section */}
       <section className="py-24 md:py-32 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
@@ -229,7 +229,7 @@ const About: React.FC = () => {
             {[
               { name: "Duryodhan Prajapat", role: "Founder & CEO", image: "../pages/images/founder/Founder.jpg", bio: " Seasoned website developer with 4 years of experience and has worked with 150+ businesses around the glboe successfully." }
             ].map((member, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 whileHover={{ y: -10 }}
                 className="group bg-white p-10 rounded-[2.5rem] md:rounded-[3rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-500"
@@ -249,14 +249,14 @@ const About: React.FC = () => {
       {/* CTA Section - Light Version */}
       <section className="py-24">
         <div className="max-w-5xl mx-auto px-4">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="bg-primary-50 rounded-[3rem] md:rounded-[3.5rem] p-12 md:p-24 text-slate-900 text-center relative overflow-hidden group border border-primary-100"
           >
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary-200/20 rounded-full blur-[100px] group-hover:scale-110 transition-transform duration-1000"></div>
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-black mb-10 tracking-tighter leading-tight relative z-10">Let's build your <br/> legacy together.</h2>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-black mb-10 tracking-tighter leading-tight relative z-10">Let's build your <br /> legacy together.</h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
               <Link to="/contact">
                 <Button variant="dark" className="h-14 md:h-16 px-10 md:px-12 font-black text-lg rounded-2xl">Start a Project</Button>

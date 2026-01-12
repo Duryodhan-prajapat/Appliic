@@ -4,10 +4,11 @@ import {
   ArrowRight, Code, Smartphone, Zap, Globe, TrendingUp, 
   ChevronDown, ShoppingBag, Target, Star,
   ShieldCheck, Rocket, Palette, ExternalLink, Eye, Linkedin, Quote,
-  BarChart3, Gauge, Award, ChevronLeft, ChevronRight
+  BarChart3, Gauge, Award, ChevronLeft, Activity, ChevronRight
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Button from '../components/Button';
+import WhatsAppButton from '../components/WhatsAppButton';
 
 const BrandMarquee = () => {
   const brands = ["Shopify", "Klaviyo", "Gorgias", "Recharge", "Yotpo", "Loop", "Attentive", "Skio"];
@@ -124,7 +125,6 @@ const BlueprintSection = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Timeline Steps */}
           <div className="relative pl-4">
             <div className="absolute left-[31px] top-4 bottom-4 w-px bg-slate-100 hidden md:block"></div>
             <div className="space-y-16">
@@ -151,53 +151,134 @@ const BlueprintSection = () => {
             </div>
           </div>
 
-          {/* Visual Mockup */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.9, x: 20 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
             className="relative"
           >
-            <div className="relative mx-auto w-[280px] md:w-[340px] h-[560px] md:h-[680px] bg-white rounded-[3rem] p-4 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.1)] border-8 border-slate-50 overflow-hidden">
-              {/* Phone Content */}
-              <div className="w-full h-full bg-white rounded-[2rem] p-6 flex flex-col">
-                <div className="flex justify-between items-center mb-10">
-                  <span className="text-xs font-black text-slate-400 uppercase tracking-widest">Daily Payments</span>
-                  <div className="px-3 py-1 bg-slate-900 text-white text-[10px] font-bold rounded-md">Publish</div>
+            {/* iPhone Frame - Grey Titanium / Space Grey */}
+            <div className="relative mx-auto w-[280px] md:w-[340px] h-[560px] md:h-[680px] bg-[#334155] rounded-[3.8rem] p-3 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.3)] border-[8px] border-[#1e293b] overflow-visible group/phone">
+              
+              {/* iPhone Side Buttons - Metallic Grey */}
+              <div className="absolute top-24 -left-[10px] w-[2.5px] h-10 bg-[#475569] rounded-l-md border-l border-white/10"></div>
+              <div className="absolute top-40 -left-[10px] w-[2.5px] h-14 bg-[#475569] rounded-l-md border-l border-white/10"></div>
+              <div className="absolute top-60 -left-[10px] w-[2.5px] h-14 bg-[#475569] rounded-l-md border-l border-white/10"></div>
+              <div className="absolute top-44 -right-[10px] w-[2.5px] h-20 bg-[#475569] rounded-r-md border-r border-white/10"></div>
+
+              {/* Dynamic Island */}
+              <div className="absolute top-5 left-1/2 -translate-x-1/2 w-28 h-7 bg-slate-900 rounded-full z-40 border border-slate-800 flex items-center justify-end px-3">
+                 <div className="w-1.5 h-1.5 rounded-full bg-[#1e293b]"></div>
+              </div>
+
+              {/* Inner Content Container (Screen) - Clean White Dashboard */}
+              <div className="relative w-full h-full bg-white rounded-[3.1rem] overflow-hidden flex flex-col border border-slate-200 shadow-inner">
+                
+                {/* Mock UI Header */}
+                <div className="p-8 pb-4 flex justify-between items-center">
+                   <div className="flex flex-col">
+                      <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Store Analytics</span>
+                      <span className="text-sm font-black text-slate-900 tracking-tight">Daily Performance</span>
+                   </div>
+                   <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center">
+                      <Activity size={14} className="text-primary-600" />
+                   </div>
                 </div>
 
-                {/* Skeleton UI */}
-                <div className="space-y-3 mb-10">
-                  <div className="h-4 w-3/4 bg-slate-50 rounded-full"></div>
-                  <div className="h-4 w-1/2 bg-slate-50 rounded-full"></div>
+                {/* Dashboard Content Area */}
+                <div className="flex-grow px-8 pt-4 space-y-6">
+                   {/* Main Analytics Figure / Chart */}
+                   <div className="bg-slate-50 rounded-[2rem] p-6 border border-slate-100">
+                      <div className="flex justify-between items-center mb-6">
+                         <div className="flex items-center gap-2">
+                            <div className="w-2 h-2 rounded-full bg-primary-500"></div>
+                            <span className="text-[10px] font-black text-slate-500">Live Traffic</span>
+                         </div>
+                         <TrendingUp size={14} className="text-green-500" />
+                      </div>
+                      
+                      {/* Visual SVG Chart */}
+                      <div className="h-32 w-full flex items-end justify-between gap-1.5">
+                         {[40, 65, 30, 85, 45, 95, 60, 75, 50, 90].map((h, i) => (
+                            <motion.div 
+                               key={i}
+                               initial={{ height: 0 }}
+                               whileInView={{ height: `${h}%` }}
+                               transition={{ delay: 0.8 + (i * 0.05), duration: 1, ease: "easeOut" }}
+                               className="w-full bg-primary-100 rounded-t-md relative group/bar"
+                            >
+                               <div className="absolute inset-0 bg-primary-600 rounded-t-md opacity-0 group-hover/bar:opacity-100 transition-opacity"></div>
+                            </motion.div>
+                         ))}
+                      </div>
+                   </div>
+
+                   {/* Secondary Stats */}
+                   <div className="grid grid-cols-2 gap-4">
+                      <div className="bg-white p-5 rounded-[1.5rem] border border-slate-100 shadow-sm">
+                         <p className="text-[8px] font-black text-slate-400 uppercase mb-1">AOV</p>
+                         <p className="text-base font-black text-slate-900">$142.50</p>
+                      </div>
+                      <div className="bg-white p-5 rounded-[1.5rem] border border-slate-100 shadow-sm">
+                         <p className="text-[8px] font-black text-slate-400 uppercase mb-1">Conv. Rate</p>
+                         <p className="text-base font-black text-slate-900">4.12%</p>
+                      </div>
+                   </div>
+
+                   {/* Activity List */}
+                   <div className="space-y-4">
+                      <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Recent Orders</p>
+                      {[1,2,3].map(i => (
+                         <div key={i} className="flex items-center justify-between py-1">
+                            <div className="flex items-center gap-3">
+                               <div className="w-8 h-8 rounded-lg bg-slate-50 border border-slate-100 flex items-center justify-center text-primary-500">
+                                  <ShoppingBag size={14} />
+                               </div>
+                               <div className="flex flex-col">
+                                  <span className="text-[10px] font-black text-slate-900">Order #842{i}</span>
+                                  <span className="text-[8px] font-bold text-slate-400">2 mins ago</span>
+                               </div>
+                            </div>
+                            <span className="text-[10px] font-black text-slate-900">$210.00</span>
+                         </div>
+                      ))}
+                   </div>
                 </div>
 
-                {/* Chart Area */}
-                <div className="flex-grow flex items-end justify-between gap-2 relative">
-                  {/* Tooltip */}
-                  <div className="absolute top-10 left-1/2 -translate-x-1/2 bg-slate-900 text-white p-3 rounded-lg shadow-xl z-20 min-w-[100px] text-center">
-                    <p className="text-[10px] font-black uppercase tracking-widest mb-0.5">Avg: 3K</p>
-                    <p className="text-[9px] text-slate-400 font-bold">Date: Jul 18</p>
-                    <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-slate-900 rotate-45"></div>
+                {/* Glassmorphism Floating Cards on top of white screen */}
+                <motion.div 
+                  animate={{ y: [0, -10, 0] }}
+                  transition={{ 
+                    y: { duration: 6, repeat: Infinity, ease: "easeInOut" }
+                  }}
+                  className="absolute top-48 left-[-30px] bg-white/70 backdrop-blur-xl p-5 rounded-[2rem] border border-white shadow-[0_20px_40px_rgba(0,0,0,0.1)] z-50 min-w-[130px]"
+                >
+                  <p className="text-[8px] font-black text-primary-600 uppercase tracking-widest mb-1">REVENUE</p>
+                  <p className="text-lg font-black text-slate-900 tracking-tight">$84,102</p>
+                  <div className="mt-2 flex items-center gap-1 text-[8px] font-bold text-green-500">
+                    <TrendingUp size={10} /> +12%
                   </div>
+                </motion.div>
 
-                  {/* Bars */}
-                  {[60, 40, 75, 45, 85, 50].map((height, i) => (
-                    <div key={i} className="flex-grow flex flex-col items-center gap-4">
-                      <motion.div 
-                        initial={{ height: 0 }}
-                        whileInView={{ height: `${height}%` }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.5 + i * 0.1, duration: 1, ease: "easeOut" }}
-                        className={`w-full rounded-full bg-gradient-to-t ${i === 2 ? 'from-primary-500 to-primary-300' : 'from-slate-100 to-slate-200'}`}
-                      />
-                      <span className="text-[10px] font-bold text-slate-300">{(i + 2) * 10}</span>
-                    </div>
-                  ))}
-                </div>
+                <motion.div 
+                  animate={{ y: [0, 10, 0] }}
+                  transition={{ 
+                    y: { duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }
+                  }}
+                  className="absolute bottom-40 right-[-30px] bg-slate-900/90 backdrop-blur-xl p-5 rounded-[2rem] border border-white/10 shadow-[0_20px_40px_rgba(0,0,0,0.3)] z-50 min-w-[130px]"
+                >
+                  <p className="text-[8px] font-black text-primary-300 uppercase tracking-widest mb-1">SPEED SCORE</p>
+                  <p className="text-lg font-black text-white tracking-tight">98/100</p>
+                  <div className="mt-2 flex items-center gap-1 text-[8px] font-bold text-primary-400">
+                    <Gauge size={10} /> Optimized
+                  </div>
+                </motion.div>
               </div>
             </div>
+
+            {/* Decorative background glow behind phone */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] bg-primary-600/5 rounded-full blur-[120px] pointer-events-none -z-10"></div>
           </motion.div>
         </div>
       </div>
@@ -788,15 +869,23 @@ const Home: React.FC = () => {
                   Get a Free Audit
                 </Button>
               </Link>
-              <Link to="/contact">
+              <a 
+                href="https://calendly.com/duryodhan_prajapat/30min" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-full sm:w-auto"
+              >
                 <Button variant="outline" className="w-full sm:w-auto h-14 md:h-16 px-10 md:px-12 text-base md:text-lg font-black rounded-2xl border-primary-600/30 text-primary-500 hover:bg-white/50">
                   Book a Call
                 </Button>
-              </Link>
+              </a>
             </div>
           </motion.div>
         </div>
       </section>
+
+      {/* Floating WhatsApp Button */}
+      <WhatsAppButton />
     </div>
   );
 };
