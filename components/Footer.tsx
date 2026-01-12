@@ -19,10 +19,10 @@ const Footer: React.FC = () => {
               Transforming ideas into digital reality. We build brands, websites, and apps that drive growth and engagement.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.instagram.com/appliic_digital" className="text-slate-400 hover:text-primary-400 transition-colors"><Instagram size={20} /></a>
-              <a href="https://www.linkedin.com/company/110840016/admin/inbox/" className="text-slate-400 hover:text-primary-400 transition-colors"><Linkedin size={20} /></a>
-              <a href="#" className="text-slate-400 hover:text-primary-400 transition-colors"><Facebook size={20} /></a>
-              <a href="#" className="text-slate-400 hover:text-primary-400 transition-colors"><Twitter size={20} /></a>
+              <a href="https://www.instagram.com/appliic_digital" target="_blank" className="text-slate-400 hover:text-primary-400 transition-colors"><Instagram size={20} /></a>
+              <a href="https://www.linkedin.com/company/110840016/admin/inbox/" target="_blank" className="text-slate-400 hover:text-primary-400 transition-colors"><Linkedin size={20} /></a>
+              {/* <a href="#" target="_blank" className="text-slate-400 hover:text-primary-400 transition-colors"><Facebook size={20} /></a>
+              <a href="#" target="_blank" className="text-slate-400 hover:text-primary-400 transition-colors"><Twitter size={20} /></a> */}
             </div>
           </div>
 
