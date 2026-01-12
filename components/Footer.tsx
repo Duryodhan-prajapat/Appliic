@@ -19,8 +19,8 @@ const Footer: React.FC = () => {
               Transforming ideas into digital reality. We build brands, websites, and apps that drive growth and engagement.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-slate-400 hover:text-primary-400 transition-colors"><Instagram size={20} /></a>
-              <a href="#" className="text-slate-400 hover:text-primary-400 transition-colors"><Linkedin size={20} /></a>
+              <a href="https://www.instagram.com/appliic_digital" className="text-slate-400 hover:text-primary-400 transition-colors"><Instagram size={20} /></a>
+              <a href="https://www.linkedin.com/company/110840016/admin/inbox/" className="text-slate-400 hover:text-primary-400 transition-colors"><Linkedin size={20} /></a>
               <a href="#" className="text-slate-400 hover:text-primary-400 transition-colors"><Facebook size={20} /></a>
               <a href="#" className="text-slate-400 hover:text-primary-400 transition-colors"><Twitter size={20} /></a>
             </div>
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-slate-400">
                 <MapPin size={20} className="text-primary-400 shrink-0 mt-1" />
-                <span>123 Innovation Drive,<br />Tech Valley, CA 90210</span>
+                <span>Jodhpur Rajasthan, 342008</span>
               </li>
               <li className="flex items-center gap-3 text-slate-400">
                 <Mail size={20} className="text-primary-400 shrink-0" />
