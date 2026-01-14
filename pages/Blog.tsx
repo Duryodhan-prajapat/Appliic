@@ -12,7 +12,7 @@ export const BLOG_POSTS = [
     category: "Shopify",
     date: "May 15, 2024",
     readTime: "8 min read",
-    author: "Alex Rivers",
+    author: "Duryodhan",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
     excerpt: "Headless commerce is no longer just for enterprise giants. Discover how Shopify Hydrogen is making blazing-fast stores accessible to everyone."
   },
@@ -22,7 +22,7 @@ export const BLOG_POSTS = [
     category: "Growth",
     date: "May 10, 2024",
     readTime: "12 min read",
-    author: "Marcus Thorne",
+    author: "Duryodhan",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
     excerpt: "Organic traffic is the highest-margin channel. Learn the exact technical SEO framework we use to scale brands from zero to 100k+ monthly sessions."
   },
@@ -32,7 +32,7 @@ export const BLOG_POSTS = [
     category: "Tech",
     date: "April 28, 2024",
     readTime: "10 min read",
-    author: "Elena Kova",
+    author: "Duryodhan",
     image: "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=800",
     excerpt: "Scale your UI without the chaos. A deep dive into structuring React components for maximum reusability and performance."
   },
@@ -42,7 +42,7 @@ export const BLOG_POSTS = [
     category: "Design",
     date: "April 20, 2024",
     readTime: "6 min read",
-    author: "Elena Kova",
+    author: "Duryodhan",
     image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800",
     excerpt: "Beautiful design is useless if it doesn't convert. We explore the bridge between high-end aesthetics and user psychological triggers."
   }

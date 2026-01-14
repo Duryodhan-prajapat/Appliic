@@ -318,7 +318,7 @@ export const PROJECTS_DATA = [
     title: "Bava Studios",
     category: "Shopify / Premium Cookware",
     image: "/images/portfolio/bava_main.png",
-    desc: "Engineered a high-performance D2C storefront for Bava Studios, highlighting their Tri-ply technology with a focus on conversion and premium brand storytelling.",
+    desc: "Bava Studios is a contemporary clothing brand offering modern, high-quality apparel designed for everyday comfort and style. The brand focuses on clean aesthetics, thoughtful design, and versatile pieces that appeal to fashion-conscious customers seeking effortless, wearable fashion.",
   },
   {
     slug: "caramelo",
@@ -476,7 +476,7 @@ const LinkedInReviewsSection = () => {
     {
       name: "Srishti Agarwal",
       title: "Creative Director, MadeOddly",
-      image: "/images/Reviews/srishti.png",
+      image: "/images/Reviews/Srishti.png",
       text: "I recently collaborated with Duryodhan on a Shopify project, and it was a great experience. He’s sharp, responsive, and knows his way around the platform really well. What I appreciated most was how easy he was to work with. No fuss, just quietly got things done, even when the brief changed or timelines shifted. If you're looking for someone reliable and efficient for your Shopify needs, I’d recommend him.",
       date: "Jul 2, 2025"
     },

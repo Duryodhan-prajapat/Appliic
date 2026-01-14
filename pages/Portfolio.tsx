@@ -21,7 +21,7 @@ const ALL_PROJECTS = [
     title: "Blaze – Trendy Accessories Store",
     category: "E-COMMERCE / SHOPIFY STORE",
     image: "/images/portfolio/shopblaze_main.png",
-    desc: "A modern Shopify e-commerce store built to sell trending accessories and gadgets with a clean interface, fast performance, and a smooth shopping experience.",
+    desc: "Shop Blaze is an e-commerce brand offering personal care and wellness products focused on comfort, confidence, and everyday well-being. The brand emphasizes quality, clear product communication, and a seamless shopping experience for its customers.",
   },
   {
     slug: "loop",
@@ -80,7 +80,7 @@ const Portfolio: React.FC = () => {
                   whileHover={{ y: -12, scale: 1.02 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1, type: 'spring', stiffness: 300, damping: 20 }}
-                  className="h-full bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 shadow-sm group-hover:shadow-2xl transition-all duration-500"
+                  className="h-full bg-white rounded-[1rem] overflow-hidden border-4 border-slate-100 shadow-sm group-hover:shadow-2xl transition-all duration-500"
                 >
                   <div className="aspect-[16/10] overflow-hidden relative">
                     <img 

@@ -9,8 +9,8 @@ import Breadcrumbs from '../components/Breadcrumbs';
 // Extended data for specific pages
 const CASE_STUDIES_DETAILS: Record<string, any> = {
   "bava-studios": {
-    challenge: "Bava Studios, a legacy manufacturer of high-end kitchenware, needed to break into the D2C market. The primary challenge was communicating the 'Tri-ply' technical advantage—a complex manufacturing process—to everyday home cooks in a visually engaging and simple way while ensuring the storefront loaded instantly on mobile devices across India.",
-    solution: "We engineered a performance-focused Shopify experience that prioritizes technical storytelling. This included custom 3D-inspired diagrams of their 3-layer technology, a streamlined product discovery path for their Frypans and Kadhais, and a seamless checkout experience with one-click WhatsApp support.",
+    challenge: "Bava Studios had a visually appealing Shopify store, but it faced multiple challenges that were limiting its growth and conversions. Despite consistent traffic, the website struggled with low engagement, unclear purchase flow, and missed conversion opportunities.",
+    solution: "To solve these challenges, I implemented a tailored solution that combined custom Shopify development with conversion rate optimization (CRO). I built brand-specific features using Shopify Liquid, JavaScript, and CSS, while restructuring product and collection pages to improve clarity, usability, and visual hierarchy. Strategic CRO enhancements such as stronger CTAs, improved trust elements, simplified navigation, and a mobile-first approach helped streamline the purchase journey, transforming the website into a scalable, high-converting Shopify store aligned with Bava Studios’ business goals.",
     results: ["240% Lift in Monthly D2C Revenue", "Top 1% Shopify Site Speed globally", "Significant reduction in CPA via conversion-led design"],
     tech: ["Shopify Plus", "Tailwind CSS", "Technical 3D Illustration", "Advanced Analytics Integration"],
     websiteUrl: "https://bavastudios.in/",
@@ -50,7 +50,7 @@ const CASE_STUDIES_DETAILS: Record<string, any> = {
   "nashira": {
     challenge: "Nashira needed to launch a fashion jewellery brand online that felt stylish, trustworthy, and easy to shop from. The challenge was to present a wide product range in a visually appealing way while keeping navigation simple, performance fast, and the overall experience consistent across mobile and desktop devices.",
     solution: "DWe built a clean, conversion-focused Shopify store with clear product categorization, highlighted collections, and a mobile-first design. The store was optimized for smooth browsing, fast loading, and easy product discovery, helping customers explore, engage, and complete purchases effortlessly.",
-    results: ["Clean, intuitive navigation across 200+ products", "Engaging product discovery with best sellers and curated collections", "Mobile-optimized store for on-the-go shoppers","Promotional UI for discounts and free shipping messaging"],
+    results: ["Clean, intuitive navigation across 200+ products", "Engaging product discovery with best sellers and curated collections", "Mobile-optimized store for on-the-go shoppers", "Promotional UI for discounts and free shipping messaging"],
     tech: ["Shopify", "Liquid", "HTML", "AJAX", "Tailwind"],
     websiteUrl: "https://shopnashira.com",
     gallery: [
@@ -63,7 +63,7 @@ const CASE_STUDIES_DETAILS: Record<string, any> = {
   "shopblaze": {
     challenge: "Blaze needed a sleek, performance-driven Shopify store to showcase its range of trending accessories and gadgets while providing an intuitive, distraction-free shopping experience that loads fast on all devices and drives conversions.",
     solution: "We built a clean and responsive Shopify store with clear product organization, engaging visuals, and an optimized mobile experience to make browsing effortless and checkout seamless, helping Blaze deliver a premium online shopping journey that converts.",
-    results: ["Improved product visibility and browsing flow", "Fast-loading, mobile-optimized shopping experience", "Clear navigation leading to smoother user journeys","Conversion-focused layout ready for ads and scaling"],
+    results: ["Improved product visibility and browsing flow", "Fast-loading, mobile-optimized shopping experience", "Clear navigation leading to smoother user journeys", "Conversion-focused layout ready for ads and scaling"],
     tech: ["Liquid", "jQuery", "Bootstrap", "Swiper.js", "AOS"],
     websiteUrl: "https://shopblaze.net/",
     gallery: [
@@ -76,7 +76,7 @@ const CASE_STUDIES_DETAILS: Record<string, any> = {
   "loop": {
     challenge: "Loop India needed a standout e-commerce platform to showcase a diverse range of hearing protection products — from sleep-focused plugs to event and everyday noise reducers — while creating a clear browsing path that helps visitors find the right earplug solution for their lifestyle.",
     solution: "We built a visually appealing and user-friendly Shopify store that presents multiple product lines with clear descriptions, easy browsing by use-case (sleep, events, travel), and straightforward navigation. The design highlights product features like noise reduction levels, customizable fits, and premium materials, improving discoverability and guiding users toward confident purchase decisions.",
-    results: ["6ultiple product categories clearly presented", "Optimized mobile and desktop experience", "4Improved product visibility and browsing clarity","Structured shopping journey tailored to needs"],
+    results: ["6ultiple product categories clearly presented", "Optimized mobile and desktop experience", "4Improved product visibility and browsing clarity", "Structured shopping journey tailored to needs"],
     tech: ["React", "Node.js", "PostgreSQL", "AWS"],
     websiteUrl: "https://loopearplugs.in/",
     gallery: [
@@ -139,7 +139,7 @@ const CaseStudy: React.FC = () => {
         <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           <Breadcrumbs light />
-          
+
           <div className="mt-8">
             <motion.button
               initial={{ opacity: 0, x: -10 }}
@@ -194,7 +194,7 @@ const CaseStudy: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="rounded-[2.5rem] md:rounded-[4rem] overflow-hidden shadow-2xl border-4 md:border-8 border-white bg-slate-100"
+            className="rounded-[2.5rem] overflow-hidden shadow-2xl border-4 md:border-5 border-white bg-slate-100"
           >
             <img src={projectSummary.image} alt={projectSummary.title} className="w-full h-auto aspect-[21/9] object-cover" />
           </motion.div>
@@ -250,7 +250,7 @@ const CaseStudy: React.FC = () => {
                   <motion.div
                     key={i}
                     whileHover={{ scale: 1.02 }}
-                    className="rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-lg h-64 md:h-80"
+                    className="rounded-[2rem] md:rounded-[1rem] overflow-hidden shadow-lg h-64 md:h-80"
                   >
                     <img src={img} alt="Gallery" className="w-full h-full object-cover" />
                   </motion.div>
