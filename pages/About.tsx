@@ -227,7 +227,8 @@ const About: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
             {[
-              { name: "Duryodhan Prajapat", role: "Founder & CEO", image: "/images/founder/Founder.jpg", bio: " Seasoned website developer with 4 years of experience and has worked with 150+ businesses around the glboe successfully." }
+              { name: "Duryodhan Prajapat", role: "Founder & CEO", image: "/images/founder/Profile_Daksh.png", bio: " Seasoned website developer with 4 years of experience and has worked with 150+ businesses around the glboe successfully." },
+              { name: "Surendra Prajapat", role: "Website and social media expert", image: "/images/founder/Profile_surendra.png", bio: "Website and social media expert building fast, responsive, SEO-friendly solutions for business digital growth." }
             ].map((member, i) => (
               <motion.div
                 key={i}
