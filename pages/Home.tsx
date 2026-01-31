@@ -33,12 +33,12 @@ const BrandMarquee = () => {
 
       if (distanceFromCenter < activationThreshold) {
         // Active state: Brand Blue color with slight scale up
-        (logo as HTMLElement).style.color = '#6366f1'; // primary-500
+        (logo as HTMLElement).style.color = '#475569'; // primary-500
         (logo as HTMLElement).style.opacity = '1';
         (logo as HTMLElement).style.transform = 'scale(1.05)';
       } else {
         // Idle state: Light grey
-        (logo as HTMLElement).style.color = '#e2e8f0'; // text-slate-200
+        (logo as HTMLElement).style.color = '#ffffff'; // text-slate-200
         (logo as HTMLElement).style.opacity = '0.6';
         (logo as HTMLElement).style.transform = 'scale(1)';
       }
