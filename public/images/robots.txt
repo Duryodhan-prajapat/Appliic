@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://appliicdigital.com/sitemap.xml
